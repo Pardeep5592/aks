@@ -1,6 +1,6 @@
 name: AKS Infra Pipeline
 on: workflow_dispatch
-permission: 
+permissions: 
   contents: read
   id-token: write
 jobs:
@@ -19,5 +19,6 @@ jobs:
           
         
       
+
 
 
