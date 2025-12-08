@@ -1,9 +1,9 @@
 name: AKS Infra Pipeline
 on: workflow_dispatch
-Permission: 
-  contents: read|write|none
-  id-token: write|none
-Jobs:
+permission: 
+  contents: read
+  id-token: write
+jobs:
   my_first_job:
     name: my first job
     runs-on: self-hosted
@@ -19,4 +19,5 @@ Jobs:
           
         
       
+
 
