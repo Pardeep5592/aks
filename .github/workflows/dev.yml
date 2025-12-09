@@ -18,10 +18,11 @@ jobs:
           subscription-id: a292df9f-279e-490f-bac2-c8a203d362bc
       - name: terraform
         run: terraform init
-        working-directory: /Env/dev
+        working-directory: /Env/dev/
           
         
       
+
 
 
 
