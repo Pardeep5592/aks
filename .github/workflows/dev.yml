@@ -1,0 +1,31 @@
+name: AKS Infra Pipeline
+on: workflow_dispatch
+permissions: 
+  contents: read
+  id-token: write
+jobs:
+  my_first_job:
+    name: my first job
+    runs-on: self-hosted
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6.0.1
+      - name: Azure Login
+        uses: Azure/login@v2.3.0
+        with:
+          client-id: 1052543e-abcf-42aa-8f2f-4615baef6990
+          tenant-id: 78609180-d037-4025-80c0-1f713ced0ec1
+          subscription-id: a292df9f-279e-490f-bac2-c8a203d362bc
+      - name: terraform
+        run: terraform init
+        working-directory: ./Env/dev/
+          
+        
+      
+
+
+
+
+
+
+
